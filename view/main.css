@@ -1,0 +1,48 @@
+.recive{
+    display: inline-block;
+    width: auto;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.plus{
+    background-color:  #EEF51D;
+}
+
+.main-form{
+    width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+select{
+    width: 20vw;
+    height: 1.8rem;
+    font-size: larger;
+}
+input[type="number"],input[type="text"]{
+    height: 1.8rem;
+    width: 10vw;
+    font-size: larger;
+}
+label{
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+.cntr{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.inner-form{
+    margin-left: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
