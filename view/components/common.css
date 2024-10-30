@@ -28,3 +28,10 @@ a{
 a:hover{
    background-color: #EEF51D;
 }
+
+@media screen and (max-width:767px) {
+    nav{
+        width: 30%;
+    }
+    
+}

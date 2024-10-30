@@ -11,8 +11,9 @@
 <body>
     <?php include("./components/header.php");?>
     
+      <div class="container">
         <form class="main-form">
-            <div class="cntr">
+            
             <div class="recive">
             <label>Catagory</label>
         <select>
@@ -21,16 +22,11 @@
             <option>option 2</option>
         </select>
         <label class="plus">+</label>
-         
+
+ 
      </div>
-     <!--The Form Bellow is to recive the name of new Catagory -->
-     <form class="inner-form">
-            <label>Name</label>
-            <input type="text"/>
-            <input type="submit" value="Post"/>
-         </form>
-        </div>
-        <div class="cntr">
+    
+        
     <div class="recive">
             <label>Item</label>
         <select>
@@ -41,27 +37,32 @@
         <label class="plus">+</label>
     </div>
 
-    <!--The Form Bellow is to recive the name of new Catagory -->
-    <form class="inner-form">
-        <div>
-            <label>Name</label>
-            <input type="text"/>
-        </div>
-        <div>
-            <label>Ammount</label>
-            <input type="number"/>
-        
-            <input type="submit" value="Post"/>
-        </div>
-         </form>
-        </div>
+    
+       
      
     <div class="recive">
         <label>Sold Ammount</label>
-<input type="number"/>    
+<input type="number" min="0" />    
     </div>
+    <input type="submit" value="submit" />
 </form>
     
+<!--  Inner Form  -->
+
+
+  <form class="inner-form">
+    
+    <div >
+    <label for="name">Name</label>
+    <input type="text"/>
+ </div>
+    <div class="ammount">
+    <label for="name">Ammount</label>
+    <input type="number" min="0" />
+   </div> 
+<input type="submit" value="POST"/>
+  </form>
+ </div>
 </body>
 </html>
 
