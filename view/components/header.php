@@ -3,7 +3,7 @@
 </style>
 <header>
 <nav>
-    <a href="#">Main</a>
-    <a href="#">Stock</a>
+    <a href="./main.php">Main</a>
+    <a href="./stock.php">Stock</a>
 </nav>
 </header>

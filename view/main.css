@@ -55,9 +55,13 @@ input[type="number"]{
     font-size: larger;
 }
 
+
 @media screen and (max-width:767px) {
     .container{
-        display: flex;
+        display: block;
+    }
+    .inner-form{
+        margin-bottom: 10vh;
     }
     label{
         font-size: medium;
@@ -65,5 +69,8 @@ input[type="number"]{
     select,input[type="text"]{
         font-size: medium;
         width: 30vw
+    }
+    .main-form{
+        padding: 10px;
     }
 }

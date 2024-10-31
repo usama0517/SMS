@@ -5,13 +5,16 @@ body{
 }
 header{
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: end;
     border-bottom: 1px solid black;
     position: fixed;
-    top: 7%;
+    top: 0%;
     left:0;
-    right: 0;;
+    right: 0;
+    background-color: #75FF7F;
+    padding: 20px;
+    
 }
 nav{
     display: flex;
@@ -28,10 +31,14 @@ a{
 a:hover{
    background-color: #EEF51D;
 }
+nav>a{
+    font-size: larger;
+     margin-left: 10px;
+}
 
 @media screen and (max-width:767px) {
     nav{
-        width: 30%;
+        width: 40%;
     }
-    
+  
 }
