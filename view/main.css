@@ -32,6 +32,7 @@ select,input[type="text"]{
 input[type="submit"]{
    background-color: #EEF51D;
 }
+
 .inner-form{
     border: 1px solid black;
     margin: 0px;
