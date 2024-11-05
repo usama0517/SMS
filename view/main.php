@@ -71,7 +71,19 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
  //Adding New Catagory..........................
   elseif(isset($_POST["newCatagorySubmit"])){
     $name = $_POST["newCatagoryName"];
-    addCatagory($name);
+    $res=addCatagory($name);
+    if($res){
+        
+      echo '<script language="javascript">';
+      echo 'alert("succsessfully added")';
+      echo '</script>';
+    }
+    else{
+      
+      echo '<script language="javascript">';
+      echo 'alert("Try Again!!!")';
+      echo '</script>';
+    }
 
   }
   //-------------------------------------------------
@@ -81,7 +93,19 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $cid=$_POST["catagoryHolder"];
     $ammt=$_POST["newItemAmmount"];
     if(isset($cid)&&isset($name)&&isset($ammt)){
-      addItem($cid,$name,$ammt);
+      $res=addItem($cid,$name,$ammt);
+      if($res){
+        
+        echo '<script language="javascript">';
+        echo 'alert("succsessfully added")';
+        echo '</script>';
+      }
+      else{
+        
+        echo '<script language="javascript">';
+        echo 'alert("Try Again!!!")';
+        echo '</script>';
+      }
     }
     else{
       echo "<h1 style=\"color:red;\">A Variable is Missing</h1>";
@@ -247,7 +271,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
   }
   function itemChecker(){
     var value = document.getElementById("selectCatagory").value;
-    if(value===0 || value==="none"){
+    if((!value|| value==="none")){
       document.getElementById("newItemSubmit").disabled=true;
       document.getElementById("warning").innerText="Please Select a Catagory";
       document.getElementById("warning").classList.toggle("invisible");

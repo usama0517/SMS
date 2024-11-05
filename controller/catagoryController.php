@@ -9,6 +9,7 @@ function addCatagory($name){
     }
     catch(mysqli_sql_exception){
         echo "couldn't add Catagory please try again";
+        return false;
     }
 }
 function fetchCatagory(){

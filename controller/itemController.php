@@ -10,6 +10,7 @@ function addItem($cid,$name,$amt){
     
     catch(mysqli_sql_exception){
         echo"Couldn't save the new item properly please try again";
+        return false;
     }
 }
 
